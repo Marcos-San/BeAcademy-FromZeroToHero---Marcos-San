@@ -1,0 +1,15 @@
+Faça um algoritmo para efetuar a troca de um pneu furado
+
+.Sinalizar a via 
+.Verificar se tem estepe
+.Caso tenha o estepe pegar as ferramentas
+.Usar chave de roda para folgar parafusos
+.Levantar carro com macaco hidraulico
+.Terminar de retirar parafusos
+.Retirar pneu furado
+.Colocar o estepe
+.Colocar parafusos
+.Descer carro do macaco hidraulico
+.Terminar de apertar parafusos
+
+
