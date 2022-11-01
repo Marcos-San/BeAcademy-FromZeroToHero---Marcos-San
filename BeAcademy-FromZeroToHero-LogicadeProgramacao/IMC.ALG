@@ -7,7 +7,7 @@ Algoritmo "IMC"
 Var
 // Seção de Declarações das variáveis 
 nome :caractere
-peso , altura :real
+peso , altura ,imc :real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
@@ -17,8 +17,8 @@ escreva ("Digite sua altura: ")
 leia (altura)
 escreva ("Digite e peso: ")
 leia (peso)
-// Calculo do IMC = peso/(altura*altura);
+ imc <- peso/(altura*altura)
 Escreva ("Nome: ", nome, " Altura: ", altura, " Peso: ", peso, "Kg")
-escreva (" IMC: ", peso/(altura*altura) )
+escreva (" IMC: ", imc)
 
 Fimalgoritmo
