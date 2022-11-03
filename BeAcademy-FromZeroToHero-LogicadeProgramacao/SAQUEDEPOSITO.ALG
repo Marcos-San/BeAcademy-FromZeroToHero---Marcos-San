@@ -17,18 +17,23 @@ Inicio
    leia (operacao)
    escreval ("digite o valor: ")
    leia (valor)
-   se (operacao=1) entao
-      escreval ("Saldo inicial: ", saldo)
-      escreval ("Valor do deposito: ", valor)
-      escreval ("Saldo atual: ", (saldo+valor))
- senao
-     se ((operacao=2) e (valor<=saldo) ) entao
-      escreval ("Saldo inicial: ", saldo)
-      escreval ("Valor do saque: ", valor)
-      escreval ("Saldo atual: ", (saldo-valor))
-   senao
-        escreval ("Opção invalida ou saldo na conta insuficiente!")
-        escreval ("Saldo atual: ", saldo)
+    se (valor>saldo) entao
+      escreval ("Saldo na conta insuficiente!")
+      escreval ("Saldo atual: ", saldo)
+    senao
+         se (operacao=1) entao
+         escreval ("Saldo inicial: ", saldo)
+         escreval ("Valor do deposito: ", valor)
+         escreval ("Saldo atual: ", (saldo+valor))
+    senao
+        se ((operacao=2) e (valor<=saldo) ) entao
+         escreval ("Saldo inicial: ", saldo)
+         escreval ("Valor do saque: ", valor)
+         escreval ("Saldo atual: ", (saldo-valor))
+      senao
+           escreval ("Opção invalida!")
+
+        fimse
       fimse
    fimse
 
