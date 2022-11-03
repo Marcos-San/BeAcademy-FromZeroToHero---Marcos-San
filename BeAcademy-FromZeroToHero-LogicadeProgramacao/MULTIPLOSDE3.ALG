@@ -13,16 +13,14 @@ Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
    Escreval ("Multiplos de 3")
    para j de 1 ate 2 faca
-   escreval ("Digite o primeiro numero: ")
+   escreval ("Digite o", j, " numero: ")
    leia (numero)
-   fimpara
-   se (numero%3=0) entao
-      escreval (numero)
-   senao
-      se (numero2%3=0) entao
-      escreval (numero2)
-      fimse
-   fimse
 
+   se (numero%3=0) entao
+      escreval (numero, " e multiplo de 3")
+
+
+   fimse
+   fimpara
 
 Fimalgoritmo
