@@ -1,21 +1,21 @@
-Algoritmo "SomarNumerosInteiros"
+Algoritmo "SaqueDoWhile"
 // Lógica de Programação]
 // Professor   : Marcos Monteiro 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
 // Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 03/11/2022
+// Data atual  : 06/11/2022
 Var
 // Seção de Declarações das variáveis 
-j, soma : inteiro
+saldo : real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   j <- 1
-   soma <- 0
+   saldo <- 1000
    repita
-       escreva (j, " + ")
-       soma <- soma + j
-       j <- j + 1
-   ate j = 101
-       escreva ("Soma total: ", soma )
+      escreval ("Saque de R$ 150 realizado")
+      saldo <- saldo-150
+      escreval ("Saldo restante: ", saldo)
+   ate saldo < 150
+       escreval ("--Saldo insuficiente--")
+       escreval ("Saldo restante: ", saldo)
 Fimalgoritmo
