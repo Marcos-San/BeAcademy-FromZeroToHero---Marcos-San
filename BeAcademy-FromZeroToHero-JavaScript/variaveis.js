@@ -1,69 +1,73 @@
-//Declarar
+//Declare uma variável de nome person
+var person 
 
-//Globais
-//Histing -> var
+//2. Que tipo de dado é a variável acima?
+console.log(typeof person)
 
+/*
+    3. Declare uma variável e atribua
+    valores para cada um dos dados:
+        * name: String
+        * age: Number (integer)
+        * weight: Number (float)
+        * isAdmin: Boolean
+        * isAman: boolean
+        
+*/
 
-/*console.log('Variável name existe aqui?', name)
-
-{//Scopo (bloco de código)
-    //Local
-    var name = "Luan"
-
+person = {
+    name: "Moacir",
+    age: 30,
+    weight: 69,
+    isAdmin: false,
+    isAman: true,
 }
 
-console.log('Variável name existe aqui?', name)*/
+/*
+    4. A variável human abaixo é de que tipo de dados?
+    
+    Object
 
+    4.1 Atribua a ela as mesmas propriedades e valores do exercício 3.
 
-//Locais
+    4.2 Mostre no console a seguinte mensagem,:
+        O humano <name> tem o peso <weight> Kg.
 
-// let name = "Luan"
-
-// console.log('Meu nome chegou aqui?', name)
-
-
-// {   //Scopo (bloco de codigo)
-//     //Local
-//     let name = "Jenifer"
-//     console.log('Meu nome chegou aqui?', name)
-
-// }
-
-
-// console.log('Meu nome chegou aqui?', name)
-
-//Declarar 
-//Objetos
-
-const human = {
-    name: "Luan Monteiro",
+*/
+/* 5 */
+let human = {
+    name: "Moacir",
     age: 30,
-    weight: 90,
-    isAthlete: true,
-    walk: function walking() {
-        console.log('Eu ando bastante!')
-    }
-} //Objeto
+    weight: 69,
+    isAdmin: false,
+    isAman: true,
+}
 
-//Concatenar
-console.log("O Humano " + human.name + " tem a idade " + human.age)
-//Interpolação
-console.log(`O Humano ${human.name} tem a idade ${human.age}`)
-
-//console.log(human.walk())
-
-
-//Array
-const animals = [
-    "Elefante", //0
-    "Gato", //1
-    "Leão", //2
-    "Cachorro", //3
-    { //4
-        name: "Moacir",
-        age: 2,
-        weight: 4
-    }
+/* 6*/
+console.log(`O humano ${human.name} tem o peso ${human.weight}Kg`)
+ 
+/* 7 */
+let humans = [
+    human
 ]
-//Tamanho 5
-console.log(animals[4].weight)
+
+console.log(humans)
+console.log(humans[0].name)
+
+/* 8. Crie um novo objeto human*/
+
+let newHuman = {
+    name: "Luan",
+    age: 40,
+    weight: 70,
+    isAdmin: false,
+    isAman: true,
+}
+ 
+    console.log(newHuman) 
+    humans = [
+        human,
+        newHuman
+] 
+console.log(humans)
+
