@@ -112,12 +112,54 @@
 
 //Parte 4
 
-let assunto = 'Estudar'
+// let assunto = 'Estudar'
 
-function criarAssunto() { //Sem parametro
-    assunto = "Escutar Musica" //mudança de valor
-    return assunto
+// function criarAssunto() { //Sem parametro
+//     assunto = "Escutar Musica" //mudança de valor
+//     return assunto
+// }
+
+// console.log(assunto) //resposta 'estudar'
+// console.log(criarAssunto(assunto)); //resposta => 'escutar musica'
+
+//Hoisting
+// digaMinhaIdade()
+
+// function digaMinhaIdade() {
+//     return console.log(30)
+// }
+
+//Callback
+
+// function minhaFuncao (callback) {
+//     console.log('Inicio da minha função')
+
+//     callback(15, 15)
+
+//     console.log('Final da minha função')
+// }
+
+// minhaFuncao(
+//     (num1, num2) => {
+//         return console.log(num1+num2)
+//     }
+// )
+
+//Function Construct
+
+function Sum (num1, num2) {
+    this.num1 = num1,
+    this.num2 = num2,
+    this.calc = function (num1, num2) {
+        return total = num1 + num2
+    }
 }
 
-console.log(assunto) //resposta 'estudar'
-console.log(criarAssunto(assunto)); //resposta => 'escutar musica'
+
+const math = new Sum()
+console.log(math.calc(20,20))
+
+
+//
+const data = new Date().getDate()
+console.log(data)
