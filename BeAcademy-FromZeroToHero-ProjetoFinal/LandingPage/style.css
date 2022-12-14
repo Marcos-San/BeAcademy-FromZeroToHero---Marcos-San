@@ -6,8 +6,12 @@
     text-decoration: none;
     color: black;
     font-weight: normal;
-
+    width: auto;
 } 
+
+:root {
+    font-size: 62,5%;
+}
 
 main {
     margin-left: 15%;
@@ -16,21 +20,29 @@ main {
 
 /*---Menu--*/
 .navigation {
-    margin-left: 250px;
-    margin-right: 250px;
-    text-align: center;
-    border-bottom: 1px solid #b9b9be;
-    
 
+    text-align: center;
+    border-bottom: 0.2rem solid #b9b9be;
+    display: inline-flex;
+    align-items: center;
+    margin: auto 0% auto 20%; 
+    width: 60%;
+}
+
+.navigation a {
+    margin-right: 10%;
 }
 
 .navigation li {
     
     display: inline-block;
-    margin: 30px auto;
-    padding:30px;
+    margin: 1.5rem;
+    padding: 1rem;
     
-    
+}
+
+.navigation .menu {
+    justify-content:right;
 }
 
 .navigation ul li a {
@@ -46,7 +58,7 @@ main {
 
 /*------------Slideshow / Carousel---------------*/
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 50rem;
     position: relative;
     margin: auto;
 }
@@ -60,19 +72,19 @@ main {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
     color: rgb(7, 7, 7);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 3rem 3rem 0;
     user-select: none;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 3.0rem 0 0 3.0rem;
 }
 
 .prev:hover, .next:hover {
@@ -81,9 +93,9 @@ main {
 
 .text {
     color: #000000;
-    font-size: 15px;
+    font-size: 1.5rem;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     bottom: 8px;
     width: 100%;
     text-align: center;
@@ -93,9 +105,9 @@ main {
 
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height: 1.0rem;
+    width: 1.0rem;
+    margin: 0 0.2rem;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -120,102 +132,83 @@ main {
 
 .history-container {
     text-align: left;
-    border-left: 50px;
+    border-left: 5.0rem;
     margin: auto;
-    padding: 10px;
+    padding: 1.0rem;
     
 }
 
 .history-container-1 {
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 1.0rem;
+    margin-bottom: 2.0rem;
     
 }
 
 .history-1 {
     float: left;
-    margin: 10px;   
+    margin: 1.0rem;   
 }
 
 .history-container-2 {
-    padding: 10px;
+    padding: 1.0rem;
     
 }
 
 .history-2 {
     float: right;
-    margin: 10px;   
-}
-
-.history-container-3 {
-    padding: 10px;
-    
+    margin: 1.0rem;   
 }
 
 .history-3 {
     float: left;
-    margin: 10px;   
-}
-
-.history-container-4 {
-    padding: 10px;
-    
+    margin: 1.0rem;   
 }
 
 .history-4 {
     float: right;
-    margin: 10px;   
-}
-
-.history-container-5 {
-    padding: 10px;
-    
+    margin: 1.0rem;   
 }
 
 .history-5 {
     float: left;
-    margin: 10px;
+    margin: 1.0rem;
     padding-bottom: 50px;   
-}
-
-.history-container-6 {
-    padding: 10px;
-    
 }
 
 .history-6 {
     float: right;
-    margin: 10px;   
+    margin: 1.0rem;   
 }
 
 .positives-points {
     list-style-type: none;
-      
+    
 }
 
 .title-pp {
-    font-size: 35px;
+    font-size: max( 30px, 0.1vw);  
     margin-left: 10%;
     
 }
 
 .advantage {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 10%;
-    border-left: solid 3px #a5a4a4;
+    margin: auto 30% 10% 30%; 
+    border-left: solid 0.2rem #a5a4a4;
+    display: inline-block;
+    
+    
 }
 
 .positives-points li {
-    margin: 20px;
+    margin: 2.0rem;
     text-align: justify;
     border-bottom: solid 1px #a5a4a4;
-    padding: 10px;
+    padding: 0.5rem; 
 }
 
 .history h2{
     position: absolute;
-    font-size: 40px;
+    font-size: 2.0rem;
     color: white;
     margin: auto;
 }
@@ -224,10 +217,15 @@ footer {
     width: 100%;
     background-color: #c5dbe4;
     position:relative;
-    bottom: 0px;
-    margin: 0px;
-    height: 200px;
+    padding: 1rem;
+    bottom: 0;
+    margin: 0;
+    height: 25.0rem;
     
+}
+
+footer h4 {
+    text-align: right;
 }
 
 footer h1 {
@@ -236,16 +234,16 @@ footer h1 {
 }
 
 .bottom-container{
-    margin: 100px;
-    
+    margin: 5rem;
+    display: inline-block;
 }
 
 .bottom {
     width: 150%;
-    height: 200px;
-    padding: 50px;
-    border: 50px;
-    border-bottom: 100px;
+    height: 13rem;
+    padding: 2.7rem;
+    border: 5rem;
+    border-bottom: 10rem;
     margin:auto;
 }
 
@@ -253,14 +251,27 @@ footer h1 {
     text-align: center;
     height: 120%;
     background-color: #c5dbe4;
-    margin: 20px;
+    margin: 2rem;
     width: 20%;
     float: left;
+    padding: 2.5rem;
     
 }
 
 .myBottom a {
     width: auto;
     height: auto;
-    color: solid black;
+    color: solid black;     
+}
+
+
+input {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    float:inline;
 }

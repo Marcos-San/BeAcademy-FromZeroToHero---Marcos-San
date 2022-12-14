@@ -6,24 +6,25 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
+    <script src="./form.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LandingPage</title>
 </head>
 <body>
     <header>
         <nav class="navigation">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Modelos</a></li>
-                <li><a href="#">Concessionárias</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#"><img src="img/BMW_Grey_Logo.svg" alt="Logo"></li>
-            </ul>
+          <label class="logo"><img src="img/BMW_Grey_Logo.svg"></label>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">Modelos</a></li>
+                <li class="nav-item"><a href="#">Concessionárias</a></li>
+                <li class="nav-item"><a href="#">Contato</a></li>
+            </ul>            
         </nav>
     </header>
     <main>
             <div>
-              <h1>BMW SÉRIE 3.BMW SÉRIE 3.</h1>
+              <h1>BMW SÉRIE 3.</h1>
               <p>O mais esportivo em sua categoria o BMW Série 3 Sedã nos modelos: 320i GP, 320i Sport GP, 320i M Sport, 330e M Sport e M340i xDrive.</p>
             </div>
             <div class="slideshow-container"> 
@@ -85,7 +86,7 @@
               <div class="history-container">
                   <div class="history-container-1">
                     <div class="history-1">
-                      <img src="/img/bmwg1.jpg">
+                      <img src="/img/bmwg1.jpg" style="width:100%">
                     </div>
                       <h2>A PRIMEIRA GERAÇÃO. </h2> 
           
@@ -106,7 +107,7 @@
                   </div>  
                 <div class="history-container-2">  
                   <div class="history-2">
-                    <img src="/img/bmwg2.jpg">
+                    <img src="/img/bmwg2.jpg" style="width:100%">
                   </div>
                     <h2>A SEGUNDA GERAÇÃO. </h2> 
             
@@ -124,9 +125,9 @@
                       Comprimento/largura/altura: máx. 4.360 mm/1.680 mm/1.380 mm
                     </p>
                 </div>
-                <div class="history-container-3">
+                <div class="history-container-2">
                   <div class="history-3">
-                    <img src="/img/bmwg3.jpg">
+                    <img src="/img/bmwg3.jpg" style="width:100%">
                   </div>
                   <h2>   A TERCEIRA GERAÇÃO.   </h2>
                   <p>
@@ -143,9 +144,9 @@
                     Comprimento/largura/altura: máx. 4.433 mm/1.710 mm/1.393 mm
                   </p>
                 </div>
-                <div class="history-container-4">  
+                <div class="history-container-2">  
                   <div class="history-4">
-                    <img src="/img/bmwg4.jpg">
+                    <img src="/img/bmwg4.jpg" style="width:100%">
                   </div>
                   <h2>    A QUARTA GERAÇÃO.   </h2>
                   <p>
@@ -162,9 +163,9 @@
                     Comprimento/largura/altura: máx. 4.492 mm/1.780 mm/1.434 mm
                   </p>
                 </div>
-                <div class="history-container-5">
+                <div class="history-container-2">
                   <div class="history-5">
-                    <img src="/img/bmwg5.jpg">
+                    <img src="/img/bmwg5.jpg" style="width:100%">
                   </div>
                   <h2>     A QUINTA GERAÇÃO.    </h2>
                   <p>
@@ -181,9 +182,9 @@
                     Comprimento/largura/altura: máx. 4.580 mm/1.817 mm/1.421 mm
                   </p>
                 </div>
-                <div class="history-container-6">
+                <div class="history-container-2">
                   <div class="history-6">
-                    <img src="/img/bmwg6.jpg">
+                    <img src="/img/bmwg6.jpg" style="width:100%">
                   </div>
                   <h2>      A SEXTA GERAÇÃO.     </h2>
                   <p>
@@ -205,18 +206,15 @@
                 <div class="bottom">
                   <div class="myBottom">
                     <a href="#">Simule seu Financiamento</a>
-                    <div></div>
-                    <div></div>
+                    
                   </div>
                   <div class="myBottom">
                     <a href="#">Fale Conosco</a>
-                    <div></div>
-                    <div></div>
+                    
                   </div>
                   <div class="myBottom">
                     <a href="#">Encontre uma concessionário</a>
-                    <div></div>
-                    <div></div>
+                
                   </div>
                 </div>
               </div>
@@ -224,11 +222,22 @@
     </main>
     <footer>
       <div class="footer">
-        <h1>Aqui esta o meu Footer</h1>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <h1>Solicita mais informações sobre BMW SÉRIE 3</h1>
+        <Form>
+          <label for="name">Nome: </label>
+          <input type="text" id="nameid" required="required" name="name" >
+          <br>
+          <br>
+          <label for="email">E-mail: </label> 
+          <input type="email" id="emailid" placeholder="xxxxxx@mail.com" name="email">
+          <br>
+          <br>
+          <label for="fone">Telefone: </label>
+          <input type="tel" id="foneid" required="required" placeholder="(00)00000-0000" name="fone" maxlength="11">
+          <br>
+          <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        </Form>
+        <h4>© BMW GROUP Brasil</h4>
       </div>
     </footer>
     
